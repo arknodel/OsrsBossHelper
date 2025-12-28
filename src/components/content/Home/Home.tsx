@@ -8,7 +8,7 @@ import './home.css';
 
 export const StartPage = () => {
   const baseContext = useContext(BaseContext);
-  useEffect(() => baseContext.setTitle('Start'));
+  useEffect(() => baseContext.setTitle('Home'));
   const [state, setState] = useState({colorStatus: true});
 
   const handleChangeColor = () => {

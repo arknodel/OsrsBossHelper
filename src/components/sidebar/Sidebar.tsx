@@ -4,7 +4,7 @@ import { routeUrls } from "../../routes";
 
 import './sidebar.css'
 import { ItemType, MenuItemType } from "antd/es/menu/interface";
-import { FileOutlined, AccountBookOutlined, AimOutlined, HomeOutlined, MinusCircleOutlined } from "@ant-design/icons";
+import { FileOutlined, AimOutlined, HomeOutlined, MinusCircleOutlined } from "@ant-design/icons";
 
 
 export const SideBar = () => {
@@ -13,30 +13,24 @@ export const SideBar = () => {
   const items: ItemType<MenuItemType>[] = [
     {
       key: routeUrls.home,
-      label: "Start",
+      label: "Home",
       onClick: () => navigate(routeUrls.home),
       icon: <HomeOutlined />,
     },
     {
-      key: routeUrls.vite,
-      label: "About Vite",
-      onClick: () => navigate(routeUrls.vite),
+      key: routeUrls.cerberus,
+      label: "Cerberus",
+      onClick: () => navigate(routeUrls.cerberus),
       icon: <AimOutlined />,
     },
     {
-      key: routeUrls.component,
-      label: "About Components",
-      onClick: () => navigate(routeUrls.component),
-      icon: <AccountBookOutlined />,
-    },
-    {
-      key: routeUrls.router,
-      label: "About Router",
-      onClick: () => navigate(routeUrls.router),
+      key: routeUrls.araxxor,
+      label: "Araxxor",
+      onClick: () => navigate(routeUrls.araxxor),
       icon: <FileOutlined />,
     },
     {
-      key: '/notfound', // This URL doesn't exist and showcases handling 404s
+      key: '/notfound', // demo 404
       label: "Not Found",
       onClick: () => navigate("/notfound"),
       icon: <MinusCircleOutlined />
@@ -46,7 +40,7 @@ export const SideBar = () => {
   return (
     <div className="sidebar">
       <div className="padding-md text-center selectness border-normal">
-        <h1 className="sidebar-title">React + Antd</h1>
+        <h1 className="sidebar-title">OSRS Boss Helper</h1>
       </div>
 
       <Menu
