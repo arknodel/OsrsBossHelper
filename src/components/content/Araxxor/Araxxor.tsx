@@ -1,9 +1,7 @@
 import { useContext, useEffect, useRef, useState } from 'react';
-import { Button, Input, Space } from 'antd';
+import { Button } from 'antd';
 import { BaseContext } from '../../base/Base';
 import './araxxor.css';
-
-const STORAGE_KEY = 'araxxorPattern';
 
 export const Araxxor = () => {
   const baseContext = useContext(BaseContext);
